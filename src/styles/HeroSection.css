@@ -1,0 +1,36 @@
+.hero-section {
+    margin-top: 0;
+    padding-top: 60px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/Hero.jpg') no-repeat center center fixed; /* Image by upklyak on Freepik */
+    background-size: cover;
+    color: white;
+}
+
+/* Parallax scrolling effect */
+@media (min-width: 768px) {
+    .hero-section {
+        background-attachment: fixed;
+    }
+}
+
+.typing-element {
+    font-size: 5em;
+}
+
+.typed-cursor {
+    font-size: 4em;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
