@@ -1,7 +1,41 @@
 [data-aos="fade-up"] {
     min-height: 200px;
-    background: white;
     margin: 20px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+.about-section {
+  background-color: #282828; /* Dark background for the card */
+  color: #e0e0e0; /* Light text */
+  padding: 25px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-size: 1.25rem;
+}
+
+.about-content {
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.about-image {
+  width: 350px;
+  border-radius: 10%;
+  margin-right: 40px; /* Space between image and text */
+}
+
+.about-text {
+  max-width: auto; /* Adjust as needed */
+}

@@ -1,0 +1,80 @@
+[data-aos="fade-up"] {
+    min-height: 200px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+.projects-section {
+    padding: 25px; /* Top and bottom padding */
+    overflow-x: auto; /* Allows horizontal scrolling */
+    font-size: 1.25rem;
+    background-color: #1a1a1a; /* Dark background for the section */
+    color: #fff;
+    text-align: left;
+    border-radius: 8px;
+  }
+  
+  /* Hide scrollbar for aesthetic purposes */
+  .projects-section::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .projects-section {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .project-card-container {
+    display: inline-flex; /* Changed to inline-flex to allow internal wrapping */
+    flex-direction: column; /* Stack children vertically */
+    width: 300px; /* Or any fixed width you prefer */
+    margin-right: 20px; /* Space between cards */
+    vertical-align: top; /* Align tops of inline-flex elements */
+  }
+  
+  .project-card {
+    background-color: #282828; /* Slightly lighter background for each card */
+    margin-bottom: 10px; /* Only bottom margin is necessary */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    white-space: normal; /* Allows text wrapping */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  }
+  
+  .project-card h3 {
+    text-align: center;
+    color: #a8a2ff; /* Accent color for project titles */
+    white-space: normal; /* Allows title to wrap */
+    overflow: hidden; /* Keeps text within card bounds */
+    text-overflow: ellipsis; /* Adds an ellipsis to text that overflows */
+  }
+  
+  .project-card p {
+    text-align: center;
+    color: #e0e0e0; /* Light grey for text */
+    overflow: hidden; /* Keeps text within card bounds */
+    text-overflow: ellipsis; /* Adds an ellipsis to text that overflows */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits text to three lines */
+    -webkit-box-orient: vertical;
+  }
+  
+  .project-card-link {
+    text-decoration: none;
+    color: inherit; /* Inherits color from parent element */
+    display: inline-block; /* Ensures the link doesn't fill entire width */
+    width: 100%; /* Ensures the link is as wide as its container */
+  }
+  
+  .project-card-link:hover .project-card {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  }
+  

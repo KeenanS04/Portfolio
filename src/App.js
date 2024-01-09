@@ -4,6 +4,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection'
+import ProjectsSection from './components/ProjectsSection'
 
 function App() {
   const [navbarBg, setNavbarBg] = useState(false);
@@ -28,6 +30,8 @@ function App() {
     <div className="App">
       <Navbar className={navbarBg ? 'navbar-bg' : ''} />
       <HeroSection />
+      <AboutSection />
+      <ProjectsSection />
     </div>
   );
 }

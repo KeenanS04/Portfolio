@@ -13,7 +13,7 @@ nav {
 }
 
 .navbar-bg {
-  background-color: #333;
+  background-color: #1a1a1a;
 }
 
 nav ul {
@@ -33,5 +33,5 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    color: #a8a2ff;
 }
