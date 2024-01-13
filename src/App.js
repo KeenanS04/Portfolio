@@ -10,34 +10,34 @@ import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
 function App() {
-  const [navbarBg, setNavbarBg] = useState(false);
+    const [navbarBg, setNavbarBg] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // Apply dark background when not at the top
-      setNavbarBg(window.scrollY > 0);
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            // Apply dark background when not at the top
+            setNavbarBg(window.scrollY > 0);
+        };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
-  return (
-    <div className="App">
-      <Navbar className={navbarBg ? 'navbar-bg' : ''} />
-      <HeroSection />
-      <AboutSection />
-      <ProjectsSection />
-      <ContactSection />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="App">
+            <Navbar className={navbarBg ? 'navbar-bg' : ''} />
+            <HeroSection />
+            <AboutSection />
+            <ProjectsSection />
+            <ContactSection />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
