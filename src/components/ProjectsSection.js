@@ -24,18 +24,16 @@ function ProjectsSection() {
     return (
     <Element name='projects'>
       <div className='projects-section' data-aos="fade-up">
-        <h1>Projects</h1>
-        <div className='projects-container'> {/* This div will contain all project cards */}
-          {projects.map(project => (
-            <div key={project.id} className='project-card-container'>
-              <a href={project.html_url} target="_blank" rel="noopener noreferrer" className='project-card-link'>
-                <div className='project-card'>
-                  <h3>{project.name}</h3>
-                  <p>{project.description}</p>
-                </div>
-              </a>
+        <h1 className="projects-heading">Projects</h1>
+        <div className='project-card-container'>
+        {projects.map(project => (
+          <a key={project.id} href={project.html_url} target="_blank" rel="noopener noreferrer" className='project-card-link'>
+            <div className='project-card'>
+              <h3>{project.name}</h3>
+              <p>{project.description}</p>
             </div>
-          ))}
+          </a>
+        ))}
         </div>
       </div>
     </Element>

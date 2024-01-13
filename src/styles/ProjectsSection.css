@@ -6,32 +6,31 @@
   }
 
 .projects-section {
-    padding: 25px; /* Top and bottom padding */
-    overflow-x: auto; /* Allows horizontal scrolling */
-    font-size: 1.25rem;
-    background-color: #1a1a1a; /* Dark background for the section */
-    color: #fff;
-    text-align: left;
-    border-radius: 8px;
-  }
-  
-  /* Hide scrollbar for aesthetic purposes */
-  .projects-section::-webkit-scrollbar {
-    display: none;
-  }
+  justify-content: center; /* Center grid items */
+  padding: 25px;
+  background-color: #1a1a1a; /* Dark background for the section */
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+}
   
   .projects-section {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
-  
+
+   .projects-heading {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+  margin-bottom: 20px; /* Space before the grid starts */
+}
+
   .project-card-container {
-    display: inline-flex; /* Changed to inline-flex to allow internal wrapping */
-    flex-direction: column; /* Stack children vertically */
-    width: 300px; /* Or any fixed width you prefer */
-    margin-right: 20px; /* Space between cards */
-    vertical-align: top; /* Align tops of inline-flex elements */
-  }
+  /* Your styling for the project card containers */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
   
   .project-card {
     background-color: #282828; /* Slightly lighter background for each card */
