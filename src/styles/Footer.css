@@ -1,22 +1,21 @@
 .footer {
-    background-color: #1a1a1a; /* Footer background color */
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .footer-icons {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .footer-icons a {
-    margin: 0 10px;
-    color: #fff; /* Icon color */
-    font-size: 24px; /* Icon size */
-  }
-  
-  .footer-icons a:hover {
-    color: #a8a2ff; /* Icon hover color */
-  }
-  
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer-icons a:hover {
+  color: #a8a2ff;
+}

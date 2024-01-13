@@ -5,12 +5,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../assets/Hero.jpg') no-repeat center center fixed; /* Image by upklyak on Freepik */
+    background: url('../assets/Hero.jpg') no-repeat center center fixed;
+    /* Image by upklyak on Freepik */
     background-size: cover;
     color: white;
 }
 
-/* Parallax scrolling effect */
 @media (min-width: 768px) {
     .hero-section {
         background-attachment: fixed;

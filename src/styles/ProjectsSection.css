@@ -3,77 +3,75 @@
     margin: 20px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+}
 
 .projects-section {
-  justify-content: center; /* Center grid items */
-  padding: 25px;
-  background-color: #1a1a1a; /* Dark background for the section */
-  color: #fff;
-  text-align: center;
-  border-radius: 8px;
-}
-  
-  .projects-section {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-
-   .projects-heading {
-  text-align: center;
-  margin-top: 20px; /* Adjust as needed */
-  margin-bottom: 20px; /* Space before the grid starts */
+    justify-content: center;
+    padding: 25px;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
 }
 
-  .project-card-container {
-  /* Your styling for the project card containers */
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
+.projects-section {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-  
-  .project-card {
-    background-color: #282828; /* Slightly lighter background for each card */
-    margin-bottom: 10px; /* Only bottom margin is necessary */
+
+.projects-heading {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.project-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.project-card {
+    background-color: #282828;
+    margin-bottom: 10px;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    white-space: normal; /* Allows text wrapping */
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-  }
-  
-  .project-card h3 {
-    text-align: center;
-    color: #a8a2ff; /* Accent color for project titles */
-    white-space: normal; /* Allows title to wrap */
-    overflow: hidden; /* Keeps text within card bounds */
-    text-overflow: ellipsis; /* Adds an ellipsis to text that overflows */
-  }
-  
-  .project-card p {
-    text-align: center;
-    color: #e0e0e0; /* Light grey for text */
-    overflow: hidden; /* Keeps text within card bounds */
-    text-overflow: ellipsis; /* Adds an ellipsis to text that overflows */
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* Limits text to three lines */
-    -webkit-box-orient: vertical;
-  }
-  
-  .project-card-link {
-    text-decoration: none;
-    color: inherit; /* Inherits color from parent element */
-    display: inline-block; /* Ensures the link doesn't fill entire width */
-    width: 100%; /* Ensures the link is as wide as its container */
-  }
-  
-  .project-card-link:hover .project-card {
+    white-space: normal;
+}
+
+.project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-  }
-  
+}
+
+.project-card h3 {
+    text-align: center;
+    color: #a8a2ff;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project-card p {
+    text-align: center;
+    color: #e0e0e0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+}
+
+.project-card-link:hover .project-card {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}

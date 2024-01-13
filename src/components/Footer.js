@@ -11,7 +11,6 @@ function Footer() {
         <a href="https://linkedin.com/in/YourUsername" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin"></i>
         </a>
-        {/* Add more icons as needed */}
       </div>
     </footer>
   );

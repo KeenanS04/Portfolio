@@ -22,22 +22,22 @@ function ProjectsSection() {
     }, []);
 
     return (
-    <Element name='projects'>
-      <div className='projects-section' data-aos="fade-up">
-        <h1 className="projects-heading">Projects</h1>
-        <div className='project-card-container'>
-        {projects.map(project => (
-          <a key={project.id} href={project.html_url} target="_blank" rel="noopener noreferrer" className='project-card-link'>
-            <div className='project-card'>
-              <h3>{project.name}</h3>
-              <p>{project.description}</p>
+        <Element name='projects'>
+            <div className='projects-section' data-aos="fade-up">
+                <h1 className="projects-heading">Projects</h1>
+                <div className='project-card-container'>
+                    {projects.map(project => (
+                        <a key={project.id} href={project.html_url} target="_blank" rel="noopener noreferrer" className='project-card-link'>
+                            <div className='project-card'>
+                                <h3>{project.name}</h3>
+                                <p>{project.description}</p>
+                            </div>
+                        </a>
+                    ))}
+                </div>
             </div>
-          </a>
-        ))}
-        </div>
-      </div>
-    </Element>
-  );
+        </Element>
+    );
 }
 
 export default ProjectsSection;
